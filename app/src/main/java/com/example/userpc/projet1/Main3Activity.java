@@ -79,7 +79,7 @@ public class Main3Activity extends AppCompatActivity {
         if (requestCode == REQUEST_TAKE_PHOTO && resultcode == RESULT_OK) {
             Uri uri = intent.getData();
             Bitmap bitmap = null;
-            try {
+            try { 
                 bitmap = MediaStore.Images.Media.getBitmap(this.getContentResolver(), uri);
             } catch (IOException e) {
                 e.printStackTrace();
