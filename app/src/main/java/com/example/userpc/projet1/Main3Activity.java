@@ -77,13 +77,10 @@ public class Main3Activity extends AppCompatActivity {
     @Override
     protected void onActivityResult(int requestCode, int resultcode, Intent intent) {
         if (requestCode == REQUEST_TAKE_PHOTO && resultcode == RESULT_OK) {
-            Uri uri = intent.getData();
-            Bitmap bitmap = null;
-            try { 
-                bitmap = MediaStore.Images.Media.getBitmap(this.getContentResolver(), uri);
-            } catch (IOException e) {
-                e.printStackTrace();
-            }
+          Bundle g=intent.getExtras();
+            Bitmap  y = (Bitmap) g.get("data");
+            Bitmap bitmap = y;
+            
             imgtake.setImageBitmap(bitmap);
         }
     }

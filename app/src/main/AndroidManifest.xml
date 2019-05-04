@@ -1,11 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.example.userpc.projet1">
-    <!--only added paragraph-->
+
+    <!-- only added paragraph -->
     <uses-feature
         android:name="android.hardware.camera"
         android:required="true" />
-    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />  <!-- only crucial line to add; for me it still worked without the other lines in this paragraph -->
+
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" /> <!-- only crucial line to add; for me it still worked without the other lines in this paragraph -->
     <uses-permission android:name="android.permission.CAMERA" />
     <uses-permission android:name="android.permission.SEND_SMS" />
     <uses-permission android:name="android.permission.INTERNET" />
@@ -33,15 +35,18 @@
             android:configChanges="orientation|screenSize" />
         <activity android:name=".Main3SommeActivity" />
         <activity android:name=".MainSpinner3Activity" />
-        <activity android:name=".premierActivity"></activity>
+        <activity android:name=".premierActivity" />
         <activity android:name=".Main3Activity">
+
+        </activity>
+        <activity android:name=".Main4Activity" />
+        <activity android:name=".tdi203Activity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".Main4Activity"></activity>
     </application>
 
 </manifest>
