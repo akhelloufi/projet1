@@ -34,4 +34,7 @@
     <string name="nomaa">afficher valeur</string>
     <string name="takePhoto">take me photo</string>
     <string name="x1">salut cest moi label</string>
+    <string name="y1">clicker ici</string>
+    <string name="y2" > taper ici  number</string>
+
 </resources>
